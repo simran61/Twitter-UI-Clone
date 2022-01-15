@@ -15,6 +15,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body{
+    background-color: var(--background-color);
+}
+
 .homePage{
     display: flex;
     /* height: 100vh; */
@@ -27,6 +31,9 @@
     flex-basis: 23.5%;
     padding: 0.5rem 0 1rem 4.3rem;
     border-right: 1px solid rgb(77, 76, 76);
+    height: 100%;
+    top: 0;
+    position: sticky;
 }
 
 .brand{
@@ -82,6 +89,7 @@
     width: 90%;
     font-size: 1rem;
     font-weight: 600;
+    padding: 0.9rem;
 }
 
 .user-profile{
@@ -120,17 +128,21 @@
 }
 
 .main{
+    /* position: fixed; */
     box-sizing: border-box;
     flex-basis: 44%;
     border-right: 1px solid rgb(77, 76, 76);
-    background-color: var(--background-color);    
+    background-color: var(--background-color); 
+    /* overflow-x: scroll; */
 }
 
 .nav-bar{
     display: flex;
-    /* background-color: rgba(25, 39, 52, 0.698); */
+    background-color: rgba(25, 39, 52, 0.246);
     justify-content: space-between;
     padding: 0.8rem 1rem;
+    /* position: fixed;
+    z-index: 20; */
     /* position: fixed; */
 }
 
@@ -166,7 +178,7 @@
 
 ::placeholder {
     color: var(--grey-text);
-  }
+}
 
 .tweet-icons{
     margin-right: 1rem;
@@ -237,6 +249,12 @@
     color: var(--primary-color);
 }
 
+.tweetImg{
+    width: 500px;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
 .singleTweetIcons{
     font-size: 0.95rem;
     /* margin-top: 0.8rem; */
@@ -258,14 +276,118 @@
     margin-right: 0.5rem;
 }
 
-
-
-
-
-
-
 .know-more{
+    box-sizing: border-box;
     background-color: var(--background-color);
     /* background-color: tomato; */
     flex-basis: 32.5%;
+    padding: 0.3rem 3.2rem 0.5rem 2.4rem;
+    height: 500%;
+    top: 0;
+    position: sticky;
+}
+
+.search{
+    background-color: rgb(33, 50, 66);
+    padding: 0.3rem 1rem;
+    border-radius: 2rem;
+}
+
+.search i{
+    font-weight: 100;
+    margin-left: 0.5rem;
+}
+
+::placeholder {
+    color: var(--grey-text);
+    font-size: 0.9rem;
+  }
+
+.search-input{
+    outline: none;
+    border: none;
+    padding: 0.5rem 1rem;
+    background: none;
+}
+
+.whatsHappening{
+    background-color: var(--dark-color);
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.happening1, .happening2, .happening3, .happening4, .happening5{
+    margin: 1.3rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.subText{
+    font-size: 0.8rem;
+    max-width: 400px;
+}
+
+.mainText{
+    font-size: 0.9rem;
+    font-weight: 700;
+    margin: 0.3rem 0;
+    max-width: 200px;
+}
+
+.sideImg{
+    border-radius: 1rem;
+    height: 70px;
+    width: 70px;
+    object-fit: cover;
+}
+
+.showMore{
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.followDiv{
+    margin-top: 1.5rem;
+    /* justify-content: space-between; */
+}
+
+.promoted{
+    margin-top: 0.5rem;
+    font-size: 0.8rem;
+}
+
+.btn-follow{
+    background-color: white;
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 0.9rem;
+    padding: 0rem 1.2rem;
+    height: 33px;
+    outline: none;
+    border: none;
+    border-radius: 1rem;
+    margin-top: 0.4rem;
+    margin-left: 2rem;
+}
+
+.follow1{
+    margin-left: 5.3rem;
+}
+
+.follow2{
+    margin-left: 4.3rem;
+}
+
+.follow3{
+    margin-left: 2.4rem;
+}
+
+.marginBottom{
+    margin-bottom: 1.3rem;
+}
+
+.terms{
+    font-size: small;
+    margin-bottom: 200px;
 }
