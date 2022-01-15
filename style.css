@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700;800&display=swap');
+
+:root{
+    --background-color: rgb(21,32,43);
+    --primary-color: rgb(29,155,240);
+    --dark-color: rgb(25,39,52);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.homePage{
+    display: flex;
+    height: 100vh;
+}
+
+.sideNav{
+    box-sizing: border-box;
+    /* background-color: green; */
+    flex-basis: 23.5%;
+    padding: 0.5rem 0 1rem 4.3rem;
+    border-right: 1px solid rgb(77, 76, 76);
+}
+
+.brand{
+    font-size: 1.7rem;
+}
+
+.menuList{
+    margin: 0.8rem 0;
+}
+
+.menuList i{
+    font-weight: 100;
+}
+
+.items{
+    position: relative;
+    left: -1.4rem;
+    list-style: none;
+    padding: 0.8rem 1.4rem;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    cursor: pointer;
+}
+
+.items:hover{
+    background-color: rgb(35, 53, 70);
+    border-radius: 2rem;
+    width: fit-content;
+}
+
+.active{
+    font-weight: bold;
+}
+
+.menu-icon{
+    margin-right: 1.2rem;
+    font-size: 1.5rem;
+    /* font-weight: 100; */
+}
+
+.btn{
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    font-weight: 500;
+    padding: 0.7rem;
+    border-radius: 2rem;
+}
+
+.btn-tweet{
+    position: relative;
+    left: -15px;
+    width: 90%;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.user-profile{
+    display: flex;
+    margin-top: 2.6rem;
+    /* line-height: 0.9rem; */
+}
+
+.profilePic{
+    height: 40px;
+    border-radius: 50%;
+    /* margin-top: 20px; */
+}
+
+.user-details{
+    font-size: 0.95rem;
+    padding: 0 0.7rem;
+}
+
+.user-details p{
+    color: rgb(149, 154, 158);
+}
+
+.profile-icon i{
+    margin-top: 5px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.main{
+    /* background-color: aqua; */
+    flex-basis: 44%;
+    /* padding: 0.5rem; */
+}
+
+.know-more{
+    /* background-color: tomato; */
+    flex-basis: 32.5%;
+}
