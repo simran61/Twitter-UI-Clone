@@ -177,6 +177,10 @@ body{
     resize: none;
 }
 
+.write::placeholder {
+    font-size: 1.2rem;
+}
+
 ::placeholder {
     color: var(--grey-text);
 }
