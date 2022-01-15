@@ -81,6 +81,7 @@ body{
     font-weight: 500;
     padding: 0.7rem;
     border-radius: 2rem;
+    cursor: pointer;
 }
 
 .btn-tweet{
@@ -201,6 +202,10 @@ body{
     padding: 0.3rem 1rem;
 }
 
+.single-tweet:hover{
+    background-color: var(--dark-color);
+}
+
 .single-tweet i{
     color: var(--grey-text);
 }
@@ -247,6 +252,7 @@ body{
 
 .hashtag{
     color: var(--primary-color);
+    cursor: pointer;
 }
 
 .tweetImg{
@@ -317,10 +323,14 @@ body{
     border-radius: 1rem;
 }
 
-.happening1, .happening2, .happening3, .happening4, .happening5{
+.happening{
     margin: 1.3rem auto;
     display: flex;
     justify-content: space-between;
+}
+
+.happening:hover{
+    background-color: rgb(35, 53, 70);
 }
 
 .subText{
